@@ -6,7 +6,6 @@
         v-model="value1"
         type="datetime"
         placeholder="Select date and time"
-        :default-time="defaultTime"
       />
     </div>
   </div>
