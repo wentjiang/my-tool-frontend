@@ -50,3 +50,16 @@ npm run test:unit
 ```sh
 npm run lint
 ```
+
+### build docker image
+
+```sh
+./scripts/build.sh
+```
+
+
+### start by docker in local
+
+```shell
+docker run --rm -p 8080:80 --name my-tool-frontend -e VITE_BACKEND_URL=http://localhost:5001/my-tool/v1-0/ wentjiang/my-tool-frontend
+```

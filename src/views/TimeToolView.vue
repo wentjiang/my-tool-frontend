@@ -30,9 +30,10 @@ import dayjs from 'dayjs'
 import { Clock } from '@element-plus/icons-vue'
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5001'  // 设置基础URL，所有请求都会以这个为前缀
+  baseURL: import.meta.env.VITE_BACKEND_URL  // 设置基础URL，所有请求都会以这个为前缀
 })
-
+console.log("-----------------------")
+console.log(import.meta.env.VITE_BACKEND_URL)
 const pickedDate = ref('')
 const message = ref("")
 function fetchTime() {
