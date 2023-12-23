@@ -4,8 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "local": "vite --mode local",
+    "dev": "vite --mode dev",
     "build": "run-p type-check \"build-only {@}\" --",
+    "build:loacl": "vite build --mode local",
+    "build:dev": "vite build --mode dev",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
