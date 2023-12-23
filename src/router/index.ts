@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import TimeToolView from '../views/TimeToolView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/my-tool-page'),
   routes: [
     {
       path: '/',
